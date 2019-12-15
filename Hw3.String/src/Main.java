@@ -17,10 +17,18 @@ public class Main {
 				break;
 			}	
 		}
-		int[] sortedArray = Sort.bubbleSort(arr);
+		// Bubble Sort
+		/*int[] sortedArray = Sort.bubbleSort(arr);
 		for (int i = 0; i < sortedArray.length; i++) {
 			System.out.print(sortedArray[i] + " ");
+		} */
+		
+		// Merge Sort
+		Sort.mergeSort(arr);
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
 		}
+		
 		scan.close();		
 	}
 }
