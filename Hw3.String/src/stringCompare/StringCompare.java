@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class StringCompare {
 	public static void main (String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter: Mom washed the frame");
+		System.out.println("Enter: Мама мыла раму");
 		String phrase = scan.nextLine().intern();
-		String str = "Mom washed the frame";
+		String str = "Мама мыла раму";
 		
 		System.out.println(str == phrase);
-		System.out.println(str == "Mom" + " washed the " + "frame");
+		System.out.println(str == "Мама" + " мыла " + "раму");
 		
 		scan.close();
 	}
