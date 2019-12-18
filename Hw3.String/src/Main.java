@@ -23,11 +23,23 @@ public class Main {
 			System.out.print(sortedArray[i] + " ");
 		} */
 		
+		// Selection Sort		
+		/* Sort.selectionSort(arr);
+		 for (int i = 0; i < arr.length; i++) {
+		 	System.out.print(arr[i] + " ");
+		 } */
+		 
+		// Insert Sort		
+		 Sort.insertSort(arr);
+		 for (int i = 0; i < arr.length; i++) {
+		 	System.out.print(arr[i] + " ");
+		 }
+		 
 		// Merge Sort
-		Sort.mergeSort(arr);
+		/*Sort.mergeSort(arr);
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");
-		}
+		} */
 		
 		scan.close();		
 	}
