@@ -89,7 +89,7 @@ public class Sort {
 	    merge(array, leftArr, rightArr);
 	}
 	
-	public static void merge(int[] wholeArray, int[] leftArr, int[] rightArr) {	  
+	private static void merge(int[] wholeArray, int[] leftArr, int[] rightArr) {	  
 	    int i = 0, j = 0, k = 0;
 	    while (i < leftArr.length && j < rightArr.length) {
 	        if (leftArr[i] <= rightArr[j]) {
