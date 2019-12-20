@@ -1,14 +1,14 @@
 import java.util.Random;
 
-public class RandomMethod {
+public class Coin {
 	public static void main (String[] args) {
-		RandomMethod randomMethod = new RandomMethod();
-		int numberOfThrows = 2000;
-		randomMethod.tossCoin(numberOfThrows);
-		System.out.print("Heads fell " + randomMethod.getHead() + " times out of " + numberOfThrows + " and tails fell " + randomMethod.getTail() + " times");
+		Coin coin = new Coin();
+		int numberOfThrows = 1000;
+		coin.toss(numberOfThrows);
+		System.out.print("Heads fell " + coin.getHead() + " times out of " + numberOfThrows + " and tails fell " + coin.getTail() + " times");
 	}
 	
-	public void tossCoin(int numberOfThrows) {
+	public void toss(int numberOfThrows) {
 		Random rand = new Random();
 		for (int i = 0; i < numberOfThrows; i++) {			
 			int randNum = rand.nextInt(2);
