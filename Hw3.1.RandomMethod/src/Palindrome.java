@@ -9,10 +9,10 @@ public class Palindrome {
         }
 
         int number = scan.nextInt();
-        System.out.println(isPalidrom(number));       
+        System.out.println(isPalidrome(number));       
       }
 
-      private static String isPalidrom(int number) {
+      private static String isPalidrome(int number) {
         String stringOfNumbers = Integer.toString(number);
         String reverseStr = new StringBuilder(stringOfNumbers).reverse().toString();
         if (reverseStr.equals(stringOfNumbers)) {
