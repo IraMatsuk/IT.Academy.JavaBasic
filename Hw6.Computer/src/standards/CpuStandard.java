@@ -1,5 +1,9 @@
 package standards;
 
-public enum CpuStandard {
+import standards.api.IStandard;
 
+public enum CpuStandard implements IStandard{
+	XEON,
+	ZEN,
+	AMD
 }

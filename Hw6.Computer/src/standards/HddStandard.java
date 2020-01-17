@@ -1,5 +1,8 @@
 package standards;
 
-public enum HddStandard {
+import standards.api.IStandard;
 
+public enum HddStandard implements IStandard{
+	SATA,
+	SAS
 }
