@@ -1,21 +1,37 @@
-
 public class ExceptionClass {
 
 	public static void main(String[] args) {
-		new ExceptionClass().someMethod();
-
+		ExceptionClass.methodTryCatch();
+		ExceptionClass.methodTryCatchFinally();
+		ExceptionClass.methodTryFinally();
 	}
-	void someMethod() {
+		
+	static void methodTryCatch() {
 		try {
-			System.out.println("try");
-			Object o = null;
-			//o.hashCode();
-			//throw new Exception();
-		} catch(NullPointerException e) {
-			System.out.println("catch");
-			//e.printStackTrace();
+			int divisionByZero = 3 / 0;
+			System.out.println("try 1.1");
+		} catch(Exception e) {
+			System.out.println("catch 1.1");
+		}
+	}
+	
+	static void methodTryFinally() {
+		try {
+			int divisionByZero = 3 / 0;
+			System.out.println("try 1.2");
 		} finally {
-			System.out.println("finally");
+			System.out.println("finally 1.2");
+		}	
+	}
+	
+	static void methodTryCatchFinally() {
+		try {
+			int divisionByZero = 3 / 0;
+			System.out.println("try 1.3");
+		} catch(Exception e) {
+			System.out.println("catch 1.3");
+		} finally {
+			System.out.println("finally 1.3");
 		}
 	}
 }
